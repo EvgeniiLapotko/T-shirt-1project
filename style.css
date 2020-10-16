@@ -490,7 +490,7 @@ ul>li{
 .sidebar__hamburger-icon{
 	width: 29px;
 	height: 29px;
-	fiil: var(--yellow);
+	fill: var(--yellow);
 }
 
 .sidebar__hamburger{

@@ -36,10 +36,52 @@
 					</div>
 				</div>			
 			</div>
+			<aside class="sidebar">
+				<a href="#" class="sidebar__hamburger">
+					<svg class="sidebar__hamburger-icon">
+						<use xlink:href="img/icons-sprite.svg#bars"></use>
+					</svg>
+				</a>
+				<div class="sidebar__header">
+					<a href="#" class="logo">
+						<img src="img/logo/logo-main.png" alt="logo" class="logo__image">
+					</a>
+					<a href="#" class="sidebar__close">
+						<svg class="sidebar__close-icon">
+							<use xlink:href="img/icons-sprite.svg#cross"></use>
+						</svg>
+					</a>
+				</div>
+				<nav class="side-menu sidebar__menu">
+					<ul class="side-menu__list">
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Детская коллекция</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Мужская коллекция</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Женская коллекция</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Популярные принты</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Новые принты</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Специальные предложения</a>
+						</li>
+						<li class="side-menu__item">
+							<a href="#" class="side-menu__link">Скоро в продаже</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
 		</section>
 	
 		<section class="product">
-		<div class="container">
+			<div class="container">
 			<ul class="filter">
 				<li class="filter__item filter__item--active">
 					<a href="#" class="filter__link">Популярное</a>
@@ -143,11 +185,11 @@
 					</div>
 				</li>
 			</ul>
-		</div>	
+			</div>	
 		</section>
 
 		<section class="collection">
-		<div class="container">
+			<div class="container">
 			<ul class="collection__list">
 				<li class="collection__item collection__item--type-guys">
 					<a href="#" class="collection__link">
@@ -165,7 +207,7 @@
 					</a>
 				</li>
 			</ul>
-		</div>
+			</div>
 		</section>
 
 		<footer class="footer">
@@ -290,11 +332,13 @@
 					</div>
 				</section>
 
-
 			</div>
-			<script src="script.js"></script>
+
 		</footer>
 
 	</div>
+
+	<script type="text/javascript" src="scripts/sidebar-menu.js"></script>
+
 </body>
 </html>

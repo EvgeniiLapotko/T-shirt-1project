@@ -490,7 +490,8 @@ ul>li{
 .sidebar__hamburger-icon{
 	width: 29px;
 	height: 29px;
-	fill: var(--yellow);
+	fill: #ffc92f;
+	border: 1px solid yellow;
 }
 
 .sidebar__hamburger{
@@ -531,6 +532,7 @@ ul>li{
 	width: 29px;
 	height: 29px;
 	fill: var(--yellow);
+
 }
 .side-menu__item{
 	margin-bottom: 20px;

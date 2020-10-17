@@ -74,15 +74,52 @@ body{
 	height: 100%;
 }
 .fade-slider__item{
-	background: url(img/bg/hero/slider_pic_1.png) center center/ contain no-repeat;
+	background: center center/ contain no-repeat;
 	height: 100%;
-	margin-top: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.fade-slider__item--visible{
+	opacity: 1;
+}
+.fade-slider__item--style-tshirts {
+	background-image: url("img/bg/hero/slider_pic_1.png");
+}
+.fade-slider__item--style-tshirts .fade-slider__text {
+	left: 50%;
+	top: 50%;
+	transform: translate(-164%,-52%)
+}
+
+.fade-slider__item--style-games {
+	background-image: url("img/bg/hero/slider_pic_2.png");
+}
+.fade-slider__item--style-games .fade-slider__text {
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%)
+}
+.fade-slider__item--style-games .lined-text{
+	align-items: center;
+}
+
+.fade-slider__item--style-presents {
+	background-image: url("img/bg/hero/slider_pic_3.png");
+}
+.fade-slider__item--style-presents .fade-slider__text {
+	left: 0;
+	bottom: 0;
+	transform: translate(-120%)
+}
+.fade-slider__item--style-presents .lined-text{
+	align-items: center;
 }
 .fade-slider__text{
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-164%, -52%);
 
 }
 .lined-text{
@@ -491,7 +528,6 @@ ul>li{
 	width: 29px;
 	height: 29px;
 	fill: #ffc92f;
-	border: 1px solid yellow;
 }
 
 .sidebar__hamburger{

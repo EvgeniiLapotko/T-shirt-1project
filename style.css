@@ -75,7 +75,6 @@ body{
 }
 .fade-slider__item{
 	background: center center/ contain no-repeat;
-	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -113,7 +112,7 @@ body{
 .fade-slider__item--style-presents .fade-slider__text {
 	left: 0;
 	bottom: 0;
-	transform: translate(-120%)
+	/*transform: translate(-10%)*/
 }
 .fade-slider__item--style-presents .lined-text{
 	align-items: center;

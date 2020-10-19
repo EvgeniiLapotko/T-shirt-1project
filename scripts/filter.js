@@ -13,7 +13,7 @@
 		control.addEventListener('click', function(e){
 			e.preventDefault();
 
-			const filterName = control.getAttribute("dara-filter");
+			const filterName = control.getAttribute("data-filter");
 
 			controls.forEach(function(link){
 				link.closest(".filter__item").classList.remove(active);

@@ -161,211 +161,175 @@ ul>li{
 	width: 1300px;
 }
 
-.filter{
+.product__container{
+	background: #ffc92f;
+	min-height: 500px;
+	margin-right: 10%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.tshirt{
+	height: 450px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 100px;
+	position: relative;
+	overflow: hidden;
+	padding: 125px 35px;
+
 }
-.filter__item{
-	margin-right: 40px;
+.option__tshirt{
+	height: 645px;
+	width: 550px;
+	border: 1px solid;
+	background: #ffffff;
+/*	display: flex;
+	justify-content: start;
+	align-items: start;*/
+	
+	margin: 10px 10px;
 }
-.filter__ite:last-child{
-	margin-right: 0;
+
+.hurley{
+	font-weight: 700;
+	font-family: "Roboto";
+	padding: 25px 30px;
 }
-.filter__link{
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-	text-transform: uppercase;
-	padding: 5px 21px;
-	color: var(--black);
-	font-size: 24px;
-	font-weight: bold;
+
+#hurley__item{
+	font-size: 20px;
+	color: var(--yellow);
+	margin: initial;
+
+}
+
+.hurley__name{
+	font-size: 35px;
+	color: #000;
+	margin: initial;
+	margin-bottom: 17px;
+}
+
+.hurley__price{
+	font-size: 38px;
+	color: #212121;
+	font-weight: 700;
+	font-family: 'Yanone Kaffeesatz', Arial, sans-serif ;
+	background: var(--yellow);
 	display: inline-block;
-	text-decoration: none;
+	padding: 5px 15px;
+	margin: initial;
+
 }
-.filter__link:hover{
-	color: var(--red);
+.option__har{
+	padding: 15px 30px;
+	width: 467px;
+	height: 198px;
+	font-size: 13px;
+	line-height: 30px;
+	color: #1b1b1b;
+	font-weight: 400;
+	font-family: "Roboto";
+	margin: initial;
+}
+.sizes{
+	display: flex;
+	padding: 0 30px;
+
+
 	
 }
-.filter__item--active .filter__link{
-	color: var(--yellow);
-	background: var(--black);
-}
-.product{
-	margin-bottom: 160px;
-}
-.products__list{
+.sizes__list{
 	display: flex;
-	flex-wrap: wrap;
-	margin-left: -27px;
-
-}
-
-.products__item{
-	width: 302px;
-	height: 386px;
-	background: var(--yellow);
-	margin-bottom: 35px;
-	margin-left: 27px;
-	position: relative;
-}
-.products__price{
-	position: absolute;
-	top: 18px;
-	left: -6px;
-	width: 126px;
-	border-bottom: 45px solid #232323;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	transform: rotate(-181deg);
-
-}
-.products__price-amount{
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-	color: #fff;
-	transform: rotate(181deg);
-	position: absolute;
-	top: 2px;
-	right: 28px;
-
-}
-.products__content{
+	align-items: center;
 	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	overflow: hidden;
+	
 }
-.products__item:hover .products__desc{
-	transform: translateY(0);
-}
-.products__desc{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 23px 30px;
-	background: rgba(35, 35, 35, 0.8);
+.sizes__spisok{
+
+	height: 62px;
 	font-size: 15px;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transform: translateY(100%);
-	transition: transform 0.3s;
-}
-.btn{
-	text-transform: uppercase;
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-	font-size: 24px;
-	padding: 2px 30px;
-	background: var(--black);
-	color: var(--yellow);
-	display: inline-block;
-	text-decoration: none;
-}
-
-.btn:hover{
-	background: var(--red);
-	color: #fff;
-
-}
-.products__img{
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.products__desc--text{
-	text-align: center;
-	margin-bottom: 18px;
-}
-.products__items--color-black{
-	background: #232323;
-}
-.products__items--color-black .products__price{
-	border-bottom-color:  var(--yellow);
-}
-.products__items--color-black .products__price-amount{
+	line-height: 28px;
 	color: #212121;
+	font-weight: 700;
+	font-family: "Roboto";
+	text-align: center;
+	margin-right: 5px;
+	align-items: center;
+	padding-top: 30px;
+
 }
 
-
-
-.products__items--size-double{
-	width: 630px;
-	height: 544px;
-}
-
-.collection{
-	margin-bottom: 150px;
-}
-
-.collection__list{
-	display: flex;
-}
-.collection__item{
-	min-height: 474px;
-	flex: 1;
-	overflow: hidden;
-	margin-right: 30px;
-	background: url("img/bg/pattern.png") center center/ 500px;
-	position: relative;
-}
-
-.collection__item:last-child{
-	margin-right: 0;
-}
-.collection__item:before{
-	content: "";
-	display: block;
-	position: absolute;
-	height: 176%;
-	width: 60%;
-	background: center center / contain no-repeat;
-	top: -17%;
-	left: -18%;
-}
-.collection__item--type-guys:before{
-	background-image: url(img/bg/collection/collection_man.png) ;
-}
-.collection__item--type-girls:before{
-	background-image: url(img/bg/collection/collection_woman.png) ;
-	top: -31%;
-	width: 80%;
-	left: -25%;
-}
-
-.collection__link{
-	display: block;
-	padding: 74px 13% 74px 44%;
+.sizes__link{
 	text-decoration: none;
-	color: inherit;
-	font-size: 15px;
-	position: relative;
-	height: 100%;
-	box-sizing: border-box;
+	color: #000;
+	border: 1px solid #CCCCCC;
+	padding:18px 15px ;
+	box-shadow: 5px 5px 5px #DDDDDD ;
 }
-.collection__link:hover .btn{
-	background: var(--red);
-	color: #fff;
+.sizes__link:hover{
+	background: var(--yellow);
 }
 
-.collection__title{
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif ;
-	font-size: 70px;
-	font-weight: bold;
-	line-height: 1;
-	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 11px;
+.tshirt__color{
+	padding: 25px 30px;
+
 }
-.collection__desc{
-	margin-bottom: 28px;
+
+.tshirt__color-list{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	height: 100%;
 }
+.tshirt__color-listli{
+	margin-right: 10px;
+}
+
+.tshirt__color-link{
+	border: 1px solid black;
+	padding: 5px 5px;
+	text-decoration: none;
+	border-radius: 40%;
+	color: #fff;
+
+}
+.tshirt__color-listli .linkblack{
+	background: #000;
+}
+
+.tshirt__color-listli .linkwhite{
+	background: #fff;
+}
+.tshirt__color-listli .linkgreen{
+	background: green;
+}
+.tshirt__color-listli .linkblue{
+	background: blue;
+}
+.tshirt__color-listli .linkred{
+	background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
 	margin-bottom: 115px;

@@ -55,7 +55,19 @@
 
 		<section class="product__container">
 			<div class="produrct_desc">
-				<img src="img/tshirts/tshirt_07.png" alt="" class="tshirt">
+				<img src="img/tshirts/tshirt_07.png" alt="" class="tshirt tshirt-active">
+			</div>
+			<div class="produrct_desc">
+				<img src="img/tshirts/tshirt_08.png" alt="" class="tshirt">
+			</div>
+			<div class="produrct_desc">
+				<img src="img/tshirts/tshirt_09.png" alt="" class="tshirt">
+			</div>
+			<div class="produrct_desc">
+				<img src="img/tshirts/tshirt_10.png" alt="" class="tshirt">
+			</div>
+			<div class="produrct_desc">
+				<img src="img/tshirts/tshirt_11.png" alt="" class="tshirt">
 			</div>
 			<div class="option__tshirt">
 				<div class="hurley">
@@ -105,23 +117,66 @@
 				</div>
 				<div class="tshirt__color">
 					<ul class="tshirt__color-list">
-						<li class="tshirt__color-listli linkblack">
-							<a href="#" class="tshirt__color-link">col</a>
+						<li class="tshirt__color-listli" id="linkblack">
+								<a href="#" class="tshirt__color-link color--cont colorBlack" ></a>
 						</li>
-						<li class="tshirt__color-listli linkwhite">
-							<a href="#" class="tshirt__color-link"> col </a>
+						<li class="tshirt__color-listli">
+							<a href="#" class="tshirt__color-link color--cont colorWhite"> </a>
 						</li>
-						<li class="tshirt__color-listli linkgreen">
-							<a href="#" class="tshirt__color-link link3">col</a>
+						<li class="tshirt__color-listli">
+							<a href="#" class="tshirt__color-link color--cont colorGreen"></a>
 						</li>
-						<li class="tshirt__color-listli linkblue">
-							<a href="#" class="tshirt__color-link link4">col</a>
+						<li class="tshirt__color-listli ">
+							<a href="#" class="tshirt__color-link color--cont colorBlue"></a>
 						</li>
-						<li class="tshirt__color-listli linkred">
-							<a href="#" class="tshirt__color-link link5">col</a>
+						<li class="tshirt__color-listli ">
+							<a href="#" class="tshirt__color-link color--cont colorRed"></a>
 						</li>
 					</ul>
+					<button class="sale__button">Купить</button>
 				</div>
+			</div>
+		</section>
+
+		<section class="opisanie">
+			<div class="container">
+				<ul class="filter">
+					<li class="filter__item filter__item--active">
+						<a href="#" data-filter="new" class="filter__link">Описание</a>
+					</li>
+					<li class="filter__item">
+						<a href="#" data-filter="bestsellers" class="filter__link">Таблица размеров</a>
+					</li>
+					<li class="filter__item">
+						<a href="#" data-filter="special"  class="filter__link">Условия доставки</a>
+					</li>
+					<li class="filter__item">
+						<a href="#" data-filter="popular"  class="filter__link">О бренде</a>
+					</li>
+				</ul>
+				<ul class="products__list">
+					<li class="products__item new">
+						<div class="products__content">
+							<img src="img/opisanie/icon.png" alt="bo-jack tshirt" class="products__img">
+						</div>
+					</li>
+					<li class="products__item bestsellers">
+						<div class="products__content">
+							<img src="img/opisanie/content.png" alt="bo-jack tshirt" class="products__img">
+						</div>
+					</li>
+					<li class="products__item special">
+						<div class="products__content">
+							<img src="img/opisanie/logo_express.png" alt="bo-jack tshirt" class="products__img">
+						</div>
+					</li>
+					<li class="products__item popular">
+						<div class="products__content">
+							<img src="img/opisanie/logorend.png" alt="bo-jack tshirt" class="products__img">
+						</div>
+					</li>
+				</ul>
+				
 			</div>
 		</section>
 	
@@ -255,7 +310,8 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="scripts/sidebar-menu.js"></script>
 	<script type="text/javascript" src="scripts/fade-slider.js"></script>
-	<script type="text/javascript" src="scripts/filter.js"></script>
+	<script type="text/javascript" src="scripts/colors.js"></script>
+	<script type="text/javascript" src="scripts/filter-product.js"></script>
 
 
 
